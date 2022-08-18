@@ -1,0 +1,149 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;    
+}
+body{
+    background-color: #f0f2f5;
+}
+@media (max-width:980px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px !important;
+    }
+    .about{
+        text-align: center;
+    }
+    .about p{
+        display: none;
+    }
+    html{
+        font-size:1.5rem;
+    }
+    .decor{
+        padding:1em 0.6em;
+    }
+}
+@media (max-width:600px){
+     html{
+        font-size:0.8rem;
+     }
+     .login{
+        max-width:fit-content;
+     }
+}
+
+
+.main{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:15em;
+    
+}
+.about{
+    max-width:500px;
+}
+.about h1{
+    font-size: 4.5rem;
+    margin-bottom:0.05em;
+    color:rgb(13, 108, 181);
+    font-weight:900;
+}
+.about p{
+    font-size:1.3rem;
+    color: black;
+    font-weight: lighter;
+}
+.login{
+    /* border:1px solid #80808040; */
+    width:21.875rem;
+    /* margin-left:-12.5em; */
+    border-radius:12px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 2px rgb(0 0 0 / 10%);
+    overflow: hidden;
+}
+.form{
+    margin: 1.2em 0.9em;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+    
+}
+#login-form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-bottom:1px solid #dddfe2;
+}
+input{
+    border: none;
+}
+.decor{
+    border: 2px solid #dddfe2;
+    margin-bottom: 0.5em;
+    padding: 0.9em 0.5em;
+    border-radius: 6px;
+}
+button.decor{
+    background-color: #0d73f9;
+    color: white;
+    padding:0.9em 0.5em;
+    font-weight: bolder;
+    font-size: 1rem;
+    cursor: pointer;
+} 
+input{
+    width: 100%;
+    padding: 0.3em 0px;
+    text-overflow: ellipsis;
+    font-size: 1.2rem;
+}  
+.forgot-pass{
+    margin: auto;
+    padding:0.7em 0px;   
+}
+a{
+    text-decoration: none;
+    color: #1877f2;
+    /* font-weight: 700; */
+}
+.create-new button{
+    background-color: #2ba512;
+    border-color: #2ba512;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    padding: 0.9em 0.5em;
+    cursor: pointer;
+}
+.create-new button:hover{
+    background-color: #42b72a;
+}
+button.decor:hover{
+    background-color: #207bf3;
+}
+input:focus{
+    outline: none;
+}
+input:active{
+    outline: none;
+}
+::placeholder{
+    font-size:1.2rem;
+    text-overflow: ellipsis;
+} 
+
+
+
+
+
+
+
